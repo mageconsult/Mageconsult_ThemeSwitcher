@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageconsult_ThemeSwitcher>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Mageconsult_ThemeSwitcher>
+    </modules>
+</config>

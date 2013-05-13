@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageconsult_ThemeSwitcher>
+            <version>0.1.0</version>
+        </Mageconsult_ThemeSwitcher>
+    </modules>
+    <global>
+        <models>
+            <mageconsult_themeswitcher>
+                <class>Mageconsult_ThemeSwitcher_Model</class>
+            </mageconsult_themeswitcher>
+        </models>
+        <blocks>
+            <mageconsult_themeswitcher>
+                <class>Mageconsult_ThemeSwitcher_Block</class>
+            </mageconsult_themeswitcher>
+        </blocks>
+        <helpers>
+            <mageconsult_themeswitcher>
+                <class>Mageconsult_ThemeSwitcher_Helper</class>
+            </mageconsult_themeswitcher>
+        </helpers>
+    </global>
+
+    <frontend>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <magestore_themeswitcher_observer>
+                        <type>singleton</type>
+                        <class>mageconsult_themeswitcher/observer</class>
+                        <method>controller_action_predispatch</method>
+                    </magestore_themeswitcher_observer>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </frontend>
+
+</config>
